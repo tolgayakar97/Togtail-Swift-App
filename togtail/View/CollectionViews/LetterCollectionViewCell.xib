@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="LetterCollectionViewCell" customModule="togtail" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="328"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="328" height="328"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b2a-cE-04h">
+                        <rect key="frame" x="0.0" y="0.0" width="328" height="328"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbo-To-tui">
+                                <rect key="frame" x="119.66666666666669" y="143" width="89" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="Sbo-To-tui" firstAttribute="centerY" secondItem="b2a-cE-04h" secondAttribute="centerY" id="ej6-Zv-c9C"/>
+                            <constraint firstItem="Sbo-To-tui" firstAttribute="centerX" secondItem="b2a-cE-04h" secondAttribute="centerX" id="i8X-w7-9xF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="b2a-cE-04h" secondAttribute="trailing" id="4qS-1l-X3x"/>
+                <constraint firstItem="b2a-cE-04h" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="66B-K1-eGr"/>
+                <constraint firstAttribute="bottom" secondItem="b2a-cE-04h" secondAttribute="bottom" id="TnR-Fe-UFH"/>
+                <constraint firstItem="b2a-cE-04h" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zAb-xR-R4Q"/>
+            </constraints>
+            <size key="customSize" width="328" height="328"/>
+            <connections>
+                <outlet property="cellLabel" destination="Sbo-To-tui" id="tSm-TJ-hGZ"/>
+                <outlet property="cellView" destination="b2a-cE-04h" id="wCF-ab-AfA"/>
+            </connections>
+            <point key="canvasLocation" x="196.94656488549617" y="1.4084507042253522"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
